@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="dist/ico/favicon.png">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="dist/js/script.js"></script>
+	<script src="dist/js/stellar.js"></script>
+		
+	<title>openbitcoin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-top.css" rel="stylesheet">
+
+    <link href="dist/css/carousel.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/html5shiv.js"></script>
+      <script src="dist/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="dist/img/openbitcoin_tiny.png"> OPENBITCOIN</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Authenticate <img src="dist/img/authenticate.png"></a></li>
+            <li><a href="#">Request Verification <img src="dist/img/requestverification.png"></a></li>
+            <li><a href="#">Report a Bug on this Page <img src="dist/img/reportbug.png"></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div class="jumbotron gray">
+      <div class="container">
+		  <div class="row">
+			<a href="#" id="show_kb">
+				<div class="col-lg-4 center">
+				  <h2><img src="dist/img/knowledgebase.png"><br>Knowledge Base</h2>
+				  <p>Tutorials, Troubleshooting, Development</p>
+				</div>
+			</a>
+			<a href="#" id="show_o">
+				<div class="col-lg-4 center">
+				  <h2><img src="dist/img/organization.png"><br>Organization</h2>
+				  <p>Proposals, Debates, Votes</p>
+				</div>
+			</a>
+			<a href="#" id="show_c">
+				<div class="col-lg-4 center">
+				  <h2><img src="dist/img/community.png"><br>Community</h2>
+				  <p>News, Directories and Discussion</p>
+				</div>
+			</a>
+		</div>	
+      </div>
+    </div>
+	<div id="more_info_div" hidden style="height:300px; min-width:100%" class="jumbotron orange">
+		<div style="position:relative" style="height:300px; min-width:100%" >
+			<div id="knowledge_base_div"  style="height:300px; min-width:100%" class="control_div">
+
+
+
+
+				<div id="knowledge_base_carousel" class="carousel slide">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#knowledge_base_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#knowledge_base_carousel" data-slide-to="1"></li>
+					<li data-target="#knowledge_base_carousel" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Getting Started</h1>
+						  <p>	
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="beginner_course">
+										<div class="col-sm-4 center">
+										  <img src="dist/img/getting_started.png">
+										  <p>
+											Beginner's Course <img src="dist/img/popout.png" alt="TryBTC is created by the Stanford Bitcoin Group">
+										   </p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-4 center disabled">
+										  <img src="dist/img/learning_wizard.png">
+										  <p>Lesson Wizard</p>
+										</div>
+									</a>
+									<a href="#" id="show_academy">
+										<div class="col-sm-4 center">
+										  <img src="dist/img/academy.png">
+										  <p>Academy</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+
+					<div class="item">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Troubleshooting</h1>
+						  <p>
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-6 center disabled">
+										  <img src="dist/img/fix_problem.png">
+										  <p>Fix a Problem</p>
+										</div>
+									</a>
+									<a href="#" id="askforhelp">
+										<div class="col-sm-6 center disabled">
+										  <img src="dist/img/get_help.png">
+										  <p>Ask for Help</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					
+					
+					
+					
+				   <div class="item">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Development</h1>
+						  <p>
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-4 center disabled">
+										  <img src="dist/img/implementing.png">
+										  <p>Using Modules</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-4  disabled">
+										  <img src="dist/img/core.png">
+										  <p>Core Development</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-4 center disabled">
+										  <img src="dist/img/development_cert.png">
+										  <p>Certification Program</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					</div>
+				  <a class="left carousel-control" href="#knowledge_base_carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				  <a class="right carousel-control" href="#knowledge_base_carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div><!-- /.carousel -->
+
+
+			</div>
+			<div id="organization_div"  style="height:300px; min-width:100%" class="control_div">
+
+
+				<div id="organization_carousel" class="carousel slide">
+				  <!-- Indicators -->
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Get Involved</h1>
+						  <p>	
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/learning_wizard.png">
+										  <p>Learn How</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/get_ideas.png">
+										  <p>Get Ideas</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/share_ideas.png">
+										  <p>Share your Own</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/vote.png">
+										  <p>Vote for Ideas</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					
+					
+					
+				  </div>
+				</div><!-- /.carousel -->
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="community_div"  style="height:300px; min-width:100%" class="control_div">
+
+
+				<div id="community_carousel" class="carousel slide">
+				  <!-- Indicators -->
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <p>	
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/news.png">
+										  <p>News</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/charts.png">
+										  <p>Price Charts</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/events.png">
+										  <p>Conferences and Meetups</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/events.png">
+										  <p>Live Forum</p>
+										</div>
+									</a>
+
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div><!-- /.carousel -->
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="academy_div" hidden class="orange" style="min-height:300px; max-height:100%; min-width:100%;">
+	<div class="gray" style="height:10px"></div>
+	 <div class="jumbotron">
+	   <div class="row" style="">
+			<div class="col-sm-4 green">
+				<div style="padding-left:20px; padding-bottom:20px">
+					<h1>Economics <img src="dist/img/economics.png"></h1>
+					<p>The value of Bitcoin is derived through a free market of supply and demand. Be a smart bitcoiner and learn about the economics behind bitcoin.</p>
+					<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4 blue" id="politics">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<h1>Politics <img src="dist/img/politics.png"></h1>
+				<p>You don't need to be politically minded to use Bitcoin, but it was created with freedom and fairness in mind. Learn why bitcoin can be important to the world.</p>
+				<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+			</div>
+			</div>
+			<div class="col-sm-4 orange2">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<h1>Cryptography <img src="dist/img/cryptography.png"></h1>
+				<p>Bitcoin wasn't the first digital currency, but it took many years to build up the technologies that made it possible. Learn all about them here.</p>
+				<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+			</div>
+			</div>
+		</div>
+	   <div class="row">
+			<div class="col-sm-4 cyan">
+				<div style="padding-left:20px; padding-bottom:20px">
+					<h1>Development <img src="dist/img/development.png"></h1>
+					<p>Regardless of the language you use, programming with bitcoin requires some basic fundemental knowledge of security, the blockchain, and existing modules. Learn about them here.</p>
+					<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4 brown">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<h1>Mining <img src="dist/img/mining.png"></h1>
+				<p>Bitcoin has the largest and most powerful processing network in the world working to crank out new coins regularly. Whether you want to participate or just learn how it works, everything you need is here.</p>
+				<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<p><br><br></p>
+				<h1><img src="dist/img/more.png"> More Courses &raquo;</h1>
+			</div>
+			</div>
+		</div>
+       </div>
+
+	</div>
+
+
+
+
+
+	<div id="beginner_div" hidden class="orange" style="min-height:300px; max-height:100%; min-width:100%;">
+	<div class="gray" style="height:10px"></div>
+	 <div class="jumbotron">
+		<iframe src="https://trybtc.com/" style="width:100%; height:800px"></iframe>
+	 </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="jumbotron gray" style="height:36px; color:#FFFFFF">
+	   <img src="dist/img/kopimi.png"> This website is shared freely because that's what the internet is for.
+	</div>
+
+	
+
+	
+	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
