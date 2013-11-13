@@ -1,83 +1,422 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="dist/ico/favicon.png">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="dist/js/script.js"></script>
+	<script src="dist/js/stellar.js"></script>
+		
+	<title>openbitcoin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-top.css" rel="stylesheet">
+
+    <link href="dist/css/carousel.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="dist/js/html5shiv.js"></script>
+      <script src="dist/js/respond.min.js"></script>
     <![endif]-->
-
-    <title>Openbitco.in by matthewnealwright</title>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Openbitco.in</h1>
-        <h2>Open source, decentralized, distributed community organization project</h2>
-        <a href="https://github.com/matthewnealwright/openbitco.in" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/matthewnealwright/openbitco.in/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/matthewnealwright/openbitco.in/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/matthewnealwright/openbitco.in"></a> is maintained by <a href="https://github.com/matthewnealwright">matthewnealwright</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="dist/img/openbitcoin_tiny.png"> OPENBITCOIN</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Authenticate <img src="dist/img/authenticate.png"></a></li>
+            <li><a href="#">Request Verification <img src="dist/img/requestverification.png"></a></li>
+            <li><a href="#">Report a Bug on this Page <img src="dist/img/reportbug.png"></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
-  
+	<div class="jumbotron gray">
+      <div class="container">
+		  <div class="row">
+			<a href="#" id="show_kb">
+				<div class="col-lg-4 center">
+				  <h2><img src="dist/img/knowledgebase.png"><br>Knowledge Base</h2>
+				  <p>Tutorials, Troubleshooting, Development</p>
+				</div>
+			</a>
+			<a href="#" id="show_o">
+				<div class="col-lg-4 center">
+				  <h2><img src="dist/img/organization.png"><br>Organization</h2>
+				  <p>Proposals, Debates, Votes</p>
+				</div>
+			</a>
+			<a href="#" id="show_c">
+				<div class="col-lg-4 center">
+				  <h2><img src="dist/img/community.png"><br>Community</h2>
+				  <p>News, Directories and Discussion</p>
+				</div>
+			</a>
+		</div>	
+      </div>
+    </div>
+	<div id="more_info_div" hidden style="height:300px; min-width:100%" class="jumbotron orange">
+		<div style="position:relative" style="height:300px; min-width:100%" >
+			<div id="knowledge_base_div"  style="height:300px; min-width:100%" class="control_div">
+
+
+
+
+				<div id="knowledge_base_carousel" class="carousel slide">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#knowledge_base_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#knowledge_base_carousel" data-slide-to="1"></li>
+					<li data-target="#knowledge_base_carousel" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Getting Started</h1>
+						  <p>	
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="beginner_course">
+										<div class="col-sm-4 center">
+										  <img src="dist/img/getting_started.png">
+										  <p>
+											Beginner's Course <img src="dist/img/popout.png" alt="TryBTC is created by the Stanford Bitcoin Group">
+										   </p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-4 center disabled">
+										  <img src="dist/img/learning_wizard.png">
+										  <p>Lesson Wizard</p>
+										</div>
+									</a>
+									<a href="#" id="show_academy">
+										<div class="col-sm-4 center">
+										  <img src="dist/img/academy.png">
+										  <p>Academy</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+
+					<div class="item">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Troubleshooting</h1>
+						  <p>
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-6 center disabled">
+										  <img src="dist/img/fix_problem.png">
+										  <p>Fix a Problem</p>
+										</div>
+									</a>
+									<a href="#" id="askforhelp">
+										<div class="col-sm-6 center disabled">
+										  <img src="dist/img/get_help.png">
+										  <p>Ask for Help</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					
+					
+					
+					
+				   <div class="item">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Development</h1>
+						  <p>
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-4 center disabled">
+										  <img src="dist/img/implementing.png">
+										  <p>Using Modules</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-4  disabled">
+										  <img src="dist/img/core.png">
+										  <p>Core Development</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-4 center disabled">
+										  <img src="dist/img/development_cert.png">
+										  <p>Certification Program</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					</div>
+				  <a class="left carousel-control" href="#knowledge_base_carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				  <a class="right carousel-control" href="#knowledge_base_carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div><!-- /.carousel -->
+
+
+			</div>
+			<div id="organization_div"  style="height:300px; min-width:100%" class="control_div">
+
+
+				<div id="organization_carousel" class="carousel slide">
+				  <!-- Indicators -->
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Get Involved</h1>
+						  <p>	
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/learning_wizard.png">
+										  <p>Learn How</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/get_ideas.png">
+										  <p>Get Ideas</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/share_ideas.png">
+										  <p>Share your Own</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/vote.png">
+										  <p>Vote for Ideas</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					
+					
+					
+				  </div>
+				</div><!-- /.carousel -->
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="community_div"  style="height:300px; min-width:100%" class="control_div">
+
+
+				<div id="community_carousel" class="carousel slide">
+				  <!-- Indicators -->
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <p>	
+							<div class="jumbotron">
+							  <div class="container">
+								  <div class="row">
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/news.png">
+										  <p>News</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/charts.png">
+										  <p>Price Charts</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/events.png">
+										  <p>Conferences and Meetups</p>
+										</div>
+									</a>
+									<a href="#" id="">
+										<div class="col-sm-3 center disabled">
+										  <img src="dist/img/events.png">
+										  <p>Live Forum</p>
+										</div>
+									</a>
+
+								</div>
+							  </div>
+							</div>
+						  </p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div><!-- /.carousel -->
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="academy_div" hidden class="orange" style="min-height:300px; max-height:100%; min-width:100%;">
+	<div class="gray" style="height:10px"></div>
+	 <div class="jumbotron">
+	   <div class="row" style="">
+			<div class="col-sm-4 green">
+				<div style="padding-left:20px; padding-bottom:20px">
+					<h1>Economics <img src="dist/img/economics.png"></h1>
+					<p>The value of Bitcoin is derived through a free market of supply and demand. Be a smart bitcoiner and learn about the economics behind bitcoin.</p>
+					<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4 blue" id="politics">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<h1>Politics <img src="dist/img/politics.png"></h1>
+				<p>You don't need to be politically minded to use Bitcoin, but it was created with freedom and fairness in mind. Learn why bitcoin can be important to the world.</p>
+				<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+			</div>
+			</div>
+			<div class="col-sm-4 orange2">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<h1>Cryptography <img src="dist/img/cryptography.png"></h1>
+				<p>Bitcoin wasn't the first digital currency, but it took many years to build up the technologies that made it possible. Learn all about them here.</p>
+				<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+			</div>
+			</div>
+		</div>
+	   <div class="row">
+			<div class="col-sm-4 cyan">
+				<div style="padding-left:20px; padding-bottom:20px">
+					<h1>Development <img src="dist/img/development.png"></h1>
+					<p>Regardless of the language you use, programming with bitcoin requires some basic fundemental knowledge of security, the blockchain, and existing modules. Learn about them here.</p>
+					<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4 brown">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<h1>Mining <img src="dist/img/mining.png"></h1>
+				<p>Bitcoin has the largest and most powerful processing network in the world working to crank out new coins regularly. Whether you want to participate or just learn how it works, everything you need is here.</p>
+				<p><a class="btn btn-default btn-lg">Take this course &raquo;</a></p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+				<div style="padding-left:20px; padding-bottom:20px">
+				<p><br><br></p>
+				<h1><img src="dist/img/more.png"> More Courses &raquo;</h1>
+			</div>
+			</div>
+		</div>
+       </div>
+
+	</div>
+
+
+
+
+
+	<div id="beginner_div" hidden class="orange" style="min-height:300px; max-height:100%; min-width:100%;">
+	<div class="gray" style="height:10px"></div>
+	 <div class="jumbotron">
+		<iframe src="https://trybtc.com/" style="width:100%; height:800px"></iframe>
+	 </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="jumbotron gray" style="height:36px; color:#FFFFFF">
+	   <img src="dist/img/kopimi.png"> This website is shared freely because that's what the internet is for.
+	</div>
+
+	
+
+	
+	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/bootstrap.min.js"></script>
   </body>
 </html>
