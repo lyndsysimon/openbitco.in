@@ -10,5 +10,4 @@ def create_app(**kwargs):
 
     app.add_url_rule('/', 'home', home)
 
-
     return app
